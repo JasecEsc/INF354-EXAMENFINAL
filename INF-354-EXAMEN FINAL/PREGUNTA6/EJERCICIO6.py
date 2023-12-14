@@ -14,7 +14,7 @@ def calcular_diferencia(texto1, texto2):
     diferencia_total = diferencias + abs(len(texto1) - len(texto2))
 
     # Normalizar la diferencia para obtener una puntuación entre 0 y 1 (0 indica similitud completa)
-    similitud = 1 - diferencia_total / max(len(texto1), len(texto2))
+    similitud = 1 - diferencia_total / max(len(texto1), len(texto2), 1)
 
     return similitud
 
